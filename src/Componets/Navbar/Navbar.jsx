@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
 
 export default function Navbar() {
@@ -28,7 +29,7 @@ export default function Navbar() {
                         <li className="dropdown dropdown-hover">
                             <a tabIndex={0}>About</a>
                             <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                                <li><a>Team</a></li>
+                                <li><Link to={"/about/team"}>Team</Link></li>
                                 <li><a>Approach</a></li>
                                 <li><a>Affiliates</a></li>
                             </ul>
@@ -92,7 +93,7 @@ export default function Navbar() {
                     <li className="dropdown dropdown-hover">
                         <a tabIndex={0}>About</a>
                         <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                            <li><a>Team</a></li>
+                            <li><Link to={'/about/team'}>Team</Link></li>
                             <li><a>Approach</a></li>
                             <li><a>Affiliates</a></li>
                         </ul>
