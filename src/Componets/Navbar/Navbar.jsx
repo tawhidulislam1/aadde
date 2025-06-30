@@ -138,7 +138,7 @@ export default function Navbar() {
                         </details>
                     </li>
 
-                    <li><Link to="#">Career</Link></li>
+                    <li><Link to={"/career"}>Career</Link></li>
                     <li><Link to="#">Pro-Bono</Link></li>
 
                     <li>

@@ -17,6 +17,7 @@ import Service2 from './page/Services/Service2.jsx';
 import Service3 from './page/Services/Service3.jsx';
 import Service4 from './page/Services/Service4.jsx';
 import Service5 from './page/Services/Service5.jsx';
+import Career from './page/Career/Career.jsx';
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "/Service5",
         element: <Service5></Service5>,
+      },
+      {
+        path: "/career",
+        element: <Career></Career>,
       },
     ],
   },
