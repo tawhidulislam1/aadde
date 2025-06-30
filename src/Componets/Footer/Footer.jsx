@@ -9,7 +9,7 @@ const Footer = () => {
                 <aside>
                     <img src={logo} alt="Company logo" className="h-12 w-auto mb-4" />
                     <p className="max-w-xs leading-relaxed">
-                        <strong className="text-white">ADE IT</strong><br />
+                        <strong className="text-black blod">ADE IT</strong><br />
                         Empowering businesses through strategy, digital transformation, and project leadership.
                     </p>
                 </aside>
