@@ -24,13 +24,13 @@ export default function Navbar() {
                     </div>
                     {/* Mobile Menu */}
                     <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64">
-                        <li><a>Home</a></li>
+                      <li><Link to={'/'}>Home</Link></li>
 
                         <li className="dropdown dropdown-hover">
                             <a tabIndex={0}>About</a>
                             <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
                                 <li><Link to={"/about/team"}>Team</Link></li>
-                                <li><a>Approach</a></li>
+                               <li><Link to={'/about/approach'}>Approach</Link></li>
                                 <li><a>Affiliates</a></li>
                             </ul>
                         </li>
@@ -88,13 +88,13 @@ export default function Navbar() {
             {/* Desktop Menu */}
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                  <li><Link to={'/'}>Home</Link></li>
 
                     <li className="dropdown dropdown-hover">
                         <a tabIndex={0}>About</a>
                         <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
                             <li><Link to={'/about/team'}>Team</Link></li>
-                            <li><a>Approach</a></li>
+                           <li><Link to={'/about/approach'}>Approach</Link></li>
                             <li><a>Affiliates</a></li>
                         </ul>
                     </li>

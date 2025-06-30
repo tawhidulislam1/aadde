@@ -5,6 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const Team = () => {
     return (
         <section className="py-16 px-6 bg-white">
+            {/* ✅ Static Content */}
             <div className="max-w-4xl mx-auto text-center mb-12">
                 <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Amazing Team</h1>
                 <p className="text-gray-600 text-lg mb-4">
@@ -14,6 +15,8 @@ const Team = () => {
                     “Alone we can do so little; together we can do so much.” — Helen Keller
                 </blockquote>
             </div>
+
+            {/* ✅ Dynamic Cards */}
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {teamData.map((member, index) => (
                     <div
