@@ -18,6 +18,7 @@ import Service3 from './page/Services/Service3.jsx';
 import Service4 from './page/Services/Service4.jsx';
 import Service5 from './page/Services/Service5.jsx';
 import Career from './page/Career/Career.jsx';
+import ProBono from './page/ProBono/ProBono.jsx';
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "/career",
         element: <Career></Career>,
+      },
+      {
+        path: "/ProBono",
+        element: <ProBono></ProBono>,
       },
     ],
   },
