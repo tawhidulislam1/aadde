@@ -12,6 +12,11 @@ import Team from './page/About/Team/Team.jsx';
 import Approach from './page/About/Approach/Approach.jsx';
 import Affiliates from './page/About/Affiliates/Affiliates.jsx';
 import Work from './page/Work/Work.jsx';
+import Service1 from './page/Services/Service1.jsx';
+import Service2 from './page/Services/Service2.jsx';
+import Service3 from './page/Services/Service3.jsx';
+import Service4 from './page/Services/Service4.jsx';
+import Service5 from './page/Services/Service5.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +42,26 @@ const router = createBrowserRouter([
       {
         path: "/work",
         element: <Work></Work>,
+      },
+      {
+        path: "/Service1",
+        element: <Service1></Service1>,
+      },
+      {
+        path: "/Service2",
+        element: <Service2></Service2>,
+      },
+      {
+        path: "/Service3",
+        element: <Service3></Service3>,
+      },
+      {
+        path: "/Service4",
+        element: <Service4></Service4>,
+      },
+      {
+        path: "/Service5",
+        element: <Service5></Service5>,
       },
     ],
   },

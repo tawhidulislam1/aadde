@@ -129,11 +129,11 @@ export default function Navbar() {
                         <details>
                             <summary>Services</summary>
                             <ul className="p-2 bg-base-100 rounded-box w-52">
-                                <li><Link to="#">Digital Transformation</Link></li>
-                                <li><Link to="#">Project Management</Link></li>
-                                <li><Link to="#">Brand Management</Link></li>
-                                <li><Link to="#">Strategy</Link></li>
-                                <li><Link to="#">Human Capital</Link></li>
+                                <li><Link to={"/Service1"}>Digital Transformation</Link></li>
+                                <li><Link to={"/Service2"}>Project Management</Link></li>
+                                <li><Link to={"/Service3"}>Brand Management</Link></li>
+                                <li><Link to={"/Service4"}>Strategy</Link></li>
+                                <li><Link to={"/Service5"}>Human Capital</Link></li>
                             </ul>
                         </details>
                     </li>
