@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+
 import { FiMonitor, FiLayers, FiBriefcase, FiTarget, FiUsers, FiCpu } from "react-icons/fi";
 
 const ServicesPreview = () => {
@@ -21,7 +22,6 @@ const ServicesPreview = () => {
                         key = { idx }
                         className = "p-6 border rounded-lg shadow hover:shadow-lg transition duration-300 flex flex-col items-start gap-4"
                     >
-                        {console.log(Icon)}
                         <Icon className="text-4xl text-blue-600" />
                         <h3 className="text-xl font-semibold text-gray-800">{name}</h3>
                         <p className="text-gray-600">

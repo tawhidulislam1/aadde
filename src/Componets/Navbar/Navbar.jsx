@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 
 export default function Navbar() {
     return (
         <div className="navbar bg-base-100 shadow">
-            {/* Left Side: Logo + Mobile Menu */}
+            {/* Left Side: Logo + Mobile Dropdown */}
             <div className="navbar-start">
+                {/* Mobile Dropdown Button */}
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
@@ -13,7 +14,8 @@ export default function Navbar() {
                             className="h-5 w-5"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke="currentColor">
+                            stroke="currentColor"
+                        >
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -22,126 +24,149 @@ export default function Navbar() {
                             />
                         </svg>
                     </div>
+
                     {/* Mobile Menu */}
                     <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64">
-                      <li><Link to={'/'}>Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
 
-                        <li className="dropdown dropdown-hover">
-                            <a tabIndex={0}>About</a>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                                <li><Link to={"/about/team"}>Team</Link></li>
-                               <li><Link to={'/about/approach'}>Approach</Link></li>
-                                <li><a>Affiliates</a></li>
-                            </ul>
+                        <li>
+                            <details>
+                                <summary>About</summary>
+                                <ul className="p-2">
+                                    <li><Link to="/about/team">Team</Link></li>
+                                    <li><Link to="/about/approach">Approach</Link></li>
+                                    <li><Link to="/about/affiliates">Affiliates</Link></li>
+                                </ul>
+                            </details>
                         </li>
 
-                        <li className="dropdown dropdown-hover">
-                            <a tabIndex={0}>Work</a>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                                <li><a>Learning</a></li>
-                            </ul>
+                        <li>
+                            <details>
+                                <summary>Work</summary>
+                                <ul className="p-2">
+                                    <li><Link to="/work">Learning</Link></li>
+                                </ul>
+                            </details>
                         </li>
 
-                        <li className="dropdown dropdown-hover">
-                            <a tabIndex={0}>Services</a>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                                <li><a>Digital Transformation</a></li>
-                                <li><a>Project Management</a></li>
-                                <li><a>Brand Management</a></li>
-                                <li><a>Strategy</a></li>
-                                <li><a>Human Capital</a></li>
-                            </ul>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul className="p-2">
+                                    <li><Link to="#">Digital Transformation</Link></li>
+                                    <li><Link to="#">Project Management</Link></li>
+                                    <li><Link to="#">Brand Management</Link></li>
+                                    <li><Link to="#">Strategy</Link></li>
+                                    <li><Link to="#">Human Capital</Link></li>
+                                </ul>
+                            </details>
                         </li>
 
-                        <li><a>Career</a></li>
-                        <li><a>Pro-Bono</a></li>
+                        <li><Link to="#">Career</Link></li>
+                        <li><Link to="#">Pro-Bono</Link></li>
 
-                        <li className="dropdown dropdown-hover">
-                            <a tabIndex={0}>Contact</a>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                                <li><a>Send Info</a></li>
-                                <li><a>Ask for Consultation</a></li>
-                            </ul>
+                        <li>
+                            <details>
+                                <summary>Contact</summary>
+                                <ul className="p-2">
+                                    <li><Link to="#">Send Info</Link></li>
+                                    <li><Link to="#">Ask for Consultation</Link></li>
+                                </ul>
+                            </details>
                         </li>
 
-                        <li className="dropdown dropdown-hover">
-                            <a tabIndex={0}>Resources</a>
-                            <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                                <li><a>Data</a></li>
-                                <li><a>C-Suite</a></li>
-                                <li><a>Leadership</a></li>
-                                <li><a>Brand Insights</a></li>
-                                <li><a>Project Resources</a></li>
-                            </ul>
+                        <li>
+                            <details>
+                                <summary>Resources</summary>
+                                <ul className="p-2">
+                                    <li><Link to="#">Data</Link></li>
+                                    <li><Link to="#">C-Suite</Link></li>
+                                    <li><Link to="#">Leadership</Link></li>
+                                    <li><Link to="#">Brand Insights</Link></li>
+                                    <li><Link to="#">Project Resources</Link></li>
+                                </ul>
+                            </details>
                         </li>
                     </ul>
                 </div>
-                <a className="normal-case text-xl">
+
+                {/* Logo */}
+                <Link to="/" className="btn btn-ghost normal-case text-xl">
                     <img
                         src={logo}
                         alt="ADE IT Logo"
                         className="h-8 w-auto sm:h-10 md:h-12"
                     />
-                </a>
+                </Link>
             </div>
 
             {/* Desktop Menu */}
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                  <li><Link to={'/'}>Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
 
-                    <li className="dropdown dropdown-hover">
-                        <a tabIndex={0}>About</a>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                            <li><Link to={'/about/team'}>Team</Link></li>
-                           <li><Link to={'/about/approach'}>Approach</Link></li>
-                            <li><a>Affiliates</a></li>
-                        </ul>
+                    <li>
+                        <details>
+                            <summary>About</summary>
+                            <ul className="p-2 bg-base-100 rounded-box w-52">
+                                <li><Link to="/about/team">Team</Link></li>
+                                <li><Link to="/about/approach">Approach</Link></li>
+                                <li><Link to="/about/affiliates">Affiliates</Link></li>
+                            </ul>
+                        </details>
                     </li>
 
-                    <li className="dropdown dropdown-hover">
-                        <a tabIndex={0}>Work</a>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                            <li><a>Learning</a></li>
-                        </ul>
+                    <li>
+                        <details>
+                            <summary>Work</summary>
+                            <ul className="p-2 bg-base-100 rounded-box w-52">
+                                <li><Link to="/work">Learning</Link></li>
+                            </ul>
+                        </details>
                     </li>
 
-                    <li className="dropdown dropdown-hover">
-                        <a tabIndex={0}>Services</a>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                            <li><a>Digital Transformation</a></li>
-                            <li><a>Project Management</a></li>
-                            <li><a>Brand Management</a></li>
-                            <li><a>Strategy</a></li>
-                            <li><a>Human Capital</a></li>
-                        </ul>
+                    <li>
+                        <details>
+                            <summary>Services</summary>
+                            <ul className="p-2 bg-base-100 rounded-box w-52">
+                                <li><Link to="#">Digital Transformation</Link></li>
+                                <li><Link to="#">Project Management</Link></li>
+                                <li><Link to="#">Brand Management</Link></li>
+                                <li><Link to="#">Strategy</Link></li>
+                                <li><Link to="#">Human Capital</Link></li>
+                            </ul>
+                        </details>
                     </li>
 
-                    <li><a>Career</a></li>
-                    <li><a>Pro-Bono</a></li>
+                    <li><Link to="#">Career</Link></li>
+                    <li><Link to="#">Pro-Bono</Link></li>
 
-                    <li className="dropdown dropdown-hover">
-                        <a tabIndex={0}>Contact</a>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                            <li><a>Send Info</a></li>
-                            <li><a>Ask for Consultation</a></li>
-                        </ul>
+                    <li>
+                        <details>
+                            <summary>Contact</summary>
+                            <ul className="p-2 bg-base-100 rounded-box w-52">
+                                <li><Link to="#">Send Info</Link></li>
+                                <li><Link to="#">Ask for Consultation</Link></li>
+                            </ul>
+                        </details>
                     </li>
 
-                    <li className="dropdown dropdown-hover">
-                        <a tabIndex={0}>Resources</a>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box p-2 shadow w-52">
-                            <li><a>Data</a></li>
-                            <li><a>C-Suite</a></li>
-                            <li><a>Leadership</a></li>
-                            <li><a>Brand Insights</a></li>
-                            <li><a>Project Resources</a></li>
-                        </ul>
+                    <li>
+                        <details>
+                            <summary>Resources</summary>
+                            <ul className="p-2 bg-base-100 rounded-box w-52">
+                                <li><Link to="#">Data</Link></li>
+                                <li><Link to="#">C-Suite</Link></li>
+                                <li><Link to="#">Leadership</Link></li>
+                                <li><Link to="#">Brand Insights</Link></li>
+                                <li><Link to="#">Project Resources</Link></li>
+                            </ul>
+                        </details>
                     </li>
                 </ul>
             </div>
 
-            {/* Language Button */}
+            {/* Language Toggle */}
             <div className="navbar-end">
                 <button className="btn btn-sm btn-outline">EN | FR</button>
             </div>
