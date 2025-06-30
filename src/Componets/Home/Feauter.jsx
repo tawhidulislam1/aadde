@@ -13,9 +13,9 @@ const Features = () => {
                 <div className="container flex flex-col mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
                     <div className="flex flex-col space-y-12 md:w-1/2">
                         <div className="flex flex-wrap gap-8 flex-col md:flex-row">
-                            {featuresData.map((item) => {
+                            {featuresData.map((item, idx) => {
                                 return (
-                                    <div className="md:w-2/5 transform transition-transform duration-300 ease-in-out hover:-translate-y-3 h-72">
+                                    <div key={idx} className="md:w-2/5 transform transition-transform duration-300 ease-in-out hover:-translate-y-3 h-72">
                                         <Card {...item} text={item.title} key={item.id} />
                                     </div>
                                 );
@@ -26,7 +26,7 @@ const Features = () => {
                     <div className="flex flex-col space-y-8 md:w-1/2">
                         {featuresData.map(({ id, description, title }) => {
                             return (
-                                <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                                <div key={id} className="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
                                     {/* Heading */}
                                     <div className="rounded-l-full bg-brightYellowSupLight md:bg-transparent">
                                         <div className="flex items-center space-x-2">
