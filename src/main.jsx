@@ -11,6 +11,7 @@ import HomeLayout from './HomeLayout.jsx';
 import Team from './page/About/Team/Team.jsx';
 import Approach from './page/About/Approach/Approach.jsx';
 import Affiliates from './page/About/Affiliates/Affiliates.jsx';
+import Work from './page/Work/Work.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/about/affiliates",
         element: <Affiliates />,
+      },
+      {
+        path: "/work",
+        element: <Work></Work>,
       },
     ],
   },
