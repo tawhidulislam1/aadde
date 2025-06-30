@@ -1,34 +1,17 @@
 
 import './App.css'
+import Footer from './Componets/Footer/Footer'
+import Navbar from './Componets/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <div className="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" defaultChecked />
-        <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div className="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div className="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" />
-        <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div className="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div className="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" />
-        <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div className="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
+
+      <Navbar>  </Navbar>
+
+      <main></main>
+      <Footer></Footer>
     </>
   )
 }
