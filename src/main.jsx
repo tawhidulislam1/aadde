@@ -19,6 +19,8 @@ import Service4 from './page/Services/Service4.jsx';
 import Service5 from './page/Services/Service5.jsx';
 import Career from './page/Career/Career.jsx';
 import ProBono from './page/ProBono/ProBono.jsx';
+import AskForConsultation from './page/Contact/AskForConsultation.jsx';
+import SendInfo from './page/Contact/SendInfo.jsx';
 
 const router = createBrowserRouter([
   {
@@ -72,6 +74,14 @@ const router = createBrowserRouter([
       {
         path: "/ProBono",
         element: <ProBono></ProBono>,
+      },
+      {
+        path: "/contact/consultation",
+        element: <AskForConsultation />,
+      },
+      {
+        path: "/contact/send-info",
+        element: <SendInfo />,
       },
     ],
   },

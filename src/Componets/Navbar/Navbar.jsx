@@ -74,8 +74,8 @@ export default function Navbar() {
                                 <details>
                                     <summary>Contact</summary>
                                     <ul className="p-2">
-                                        <li><Link to="/contact/info" onClick={handleLinkClick}>Send Info</Link></li>
-                                        <li><Link to="/contact/consult" onClick={handleLinkClick}>Ask for Consultation</Link></li>
+                                        <li><Link to="/contact/send-info" onClick={handleLinkClick}>Send Info</Link></li>
+                                        <li><Link to="/contact/consultation" onClick={handleLinkClick}>Ask for Consultation</Link></li>
                                     </ul>
                                 </details>
                             </li>
@@ -145,8 +145,8 @@ export default function Navbar() {
                         <details>
                             <summary>Contact</summary>
                             <ul className="p-2 bg-base-100 rounded-box">
-                                <li><Link to="/contact/info">Send Info</Link></li>
-                                <li><Link to="/contact/consult">Ask for Consultation</Link></li>
+                                <li><Link to="/contact/send-info">Send Info</Link></li>
+                                <li><Link to="/contact/consultation">Ask for Consultation</Link></li>
                             </ul>
                         </details>
                     </li>
