@@ -21,6 +21,11 @@ import Career from './page/Career/Career.jsx';
 import ProBono from './page/ProBono/ProBono.jsx';
 import AskForConsultation from './page/Contact/AskForConsultation.jsx';
 import SendInfo from './page/Contact/SendInfo.jsx';
+import Data from './page/Resources/Data.jsx';
+import CSuite from './page/Resources/CSuite.jsx';
+import Leadership from './page/Resources/Leadership.jsx';
+import BrandInsights from './page/Resources/BrandInsights.jsx';
+import ProjectResources from './page/Resources/ProjectResources.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,35 +50,35 @@ const router = createBrowserRouter([
       },
       {
         path: "/work",
-        element: <Work></Work>,
+        element: <Work />,
       },
       {
         path: "/Service1",
-        element: <Service1></Service1>,
+        element: <Service1 />,
       },
       {
         path: "/Service2",
-        element: <Service2></Service2>,
+        element: <Service2 />,
       },
       {
         path: "/Service3",
-        element: <Service3></Service3>,
+        element: <Service3 />,
       },
       {
         path: "/Service4",
-        element: <Service4></Service4>,
+        element: <Service4 />,
       },
       {
         path: "/Service5",
-        element: <Service5></Service5>,
+        element: <Service5 />,
       },
       {
         path: "/career",
-        element: <Career></Career>,
+        element: <Career />,
       },
       {
         path: "/ProBono",
-        element: <ProBono></ProBono>,
+        element: <ProBono />,
       },
       {
         path: "/contact/consultation",
@@ -83,6 +88,27 @@ const router = createBrowserRouter([
         path: "/contact/send-info",
         element: <SendInfo />,
       },
+      {
+        path: "/resources/data",
+        element: <Data />,
+      },
+      {
+        path: "/resources/c-suite",
+        element: <CSuite />,
+      },
+      {
+        path: "/resources/leadership",
+        element: <Leadership />,
+      },
+      {
+        path: "/resources/brand",
+        element: <BrandInsights />,
+      },
+      {
+        path: "/resources/project",
+        element: <ProjectResources />,
+      },
+
     ],
   },
 ]);
