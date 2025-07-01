@@ -1,12 +1,57 @@
-# React + Vite
+# AADDE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A feature-rich, modern React application powered by Vite, Tailwind CSS, and several productivity libraries. Built for speed, responsiveness, and scalable architecture.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Run Development Server](#run-development-server)
+  - [Build for Production](#build-for-production)
+  - [Preview Build](#preview-build)
+  - [Linting](#linting)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+- [Contributors](#contributors)
+- [License](#license)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Introduction
+
+**AADDE** is a private React-based frontend project that leverages modern web technologies including:
+
+- **Vite** for fast bundling and hot module reloading
+- **Tailwind CSS + DaisyUI** for flexible UI styling
+- **Framer Motion**, **Swiper**, and **React Router** for a dynamic UX
+
+This stack is ideal for developers looking to build performant SPAs with animated transitions and elegant component styling.
+
+---
+
+## Features
+
+- ⚡ Lightning-fast dev environment with Vite
+- 🎨 Tailwind CSS + DaisyUI for responsive UI components
+- ⚛️ React 19 with modular structure
+- 🧭 Dynamic client-side routing (React Router)
+- 🎞️ Framer Motion animations
+- 📱 Mobile-ready carousels (Swiper)
+- 📦 Offline storage with LocalForage
+- 🧩 Intelligent sorting (match-sorter)
+
+---
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/tawhidulislam1/aadde.git
+cd aadde
+npm install
