@@ -70,7 +70,7 @@ const Service3 = () => {
                 <h2 className="text-3xl font-semibold text-indigo-900 mb-8 text-center">
                     Key Elements of Brand Management
                 </h2>
-                <ul className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 list-disc list-inside text-indigo-800 font-medium">
+                <ul className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 list-disc list-inside text-indigo-800 font-medium">
                     {keyElements.map((el, idx) => (
                         <li key={idx} className="hover:text-indigo-600 cursor-default">
                             {el}

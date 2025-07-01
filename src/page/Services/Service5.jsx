@@ -76,7 +76,7 @@ const Service5 = () => {
                 <h2 className="text-3xl font-bold text-indigo-700 text-center mb-8">
                     Core Human Capital Principles
                 </h2>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-indigo-800 font-medium">
+                <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center text-indigo-800 font-medium">
                     {principles.map((principle, idx) => (
                         <motion.li
                             key={idx}

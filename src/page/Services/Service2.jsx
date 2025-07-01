@@ -38,7 +38,7 @@ const Service2 = () => {
 
                 <div className="mt-16">
                     <h3 className="text-2xl font-semibold mb-6 text-center">Key Tools & Practices</h3>
-                    <ul className="max-w-xl mx-auto grid grid-cols-2 gap-4 list-disc list-inside text-gray-700">
+                    <ul className="max-w-xl mx-auto grid grid-cols-2  gap-4 list-disc list-inside text-gray-700">
                         <li>Clear Communication</li>
                         <li>Defined Roles</li>
                         <li>Regular Progress Monitoring</li>

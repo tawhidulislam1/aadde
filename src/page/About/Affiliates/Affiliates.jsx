@@ -31,7 +31,7 @@ const Affiliates = () => {
                 </p>
             </div>
 
-            <div className="grid gap-12 md:grid-cols-3">
+            <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
                 {affiliates.map(({ id, name, website, description }) => (
                     <a
                         key={id}

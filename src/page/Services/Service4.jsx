@@ -68,7 +68,7 @@ const Service4 = () => {
                 <h2 className="text-3xl font-semibold text-green-900 mb-8 text-center">
                     Key Principles of Effective Strategy
                 </h2>
-                <ul className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 list-disc list-inside text-green-800 font-medium">
+                <ul className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 list-disc list-inside text-green-800 font-medium">
                     {keyPrinciples.map((principle, idx) => (
                         <li key={idx} className="hover:text-green-600 cursor-default">
                             {principle}

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FiClipboard, FiUsers, FiActivity, FiCalendar, FiTool } from "react-icons/fi";
 
 const ProjectResources = () => {

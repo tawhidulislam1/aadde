@@ -30,7 +30,7 @@ const Testimonial = () => {
                 >
                     {testimonialsData.map(({ id, image, content, name }) => (
                         <SwiperSlide key={id}>
-                            <div className="flex flex-col items-center p-6 space-y-6 bg-white rounded-lg shadow-lg text-center h-full">
+                            <div className="flex flex-col items-center p-6 space-y-6 pt-14 bg-white rounded-lg shadow-lg text-center h-full">
                                 <img
                                     src={image}
                                     alt={name}
@@ -47,7 +47,7 @@ const Testimonial = () => {
                 <div className="my-16 text-center">
                     <Link
                         to="#"
-                        className="inline-block p-3 px-6 pt-2 text-white bg-yellow-500 rounded-full hover:bg-yellow-400 transition"
+                        className="inline-block p-3 px-6 pt-2 text-white bg-blue-500 rounded-full hover:bg-blue-400 transition"
                     >
                         Get Started
                     </Link>

@@ -90,7 +90,7 @@ const Service1 = () => {
             </motion.p>
 
             {/* Steps */}
-            <div className="grid md:grid-cols-3 gap-10">
+            <div className="grid  md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10">
                 {stepsData.map(({ title, description, icon }, idx) => (
                     <motion.div
                         key={idx}
@@ -119,7 +119,7 @@ const Service1 = () => {
                 <h2 className="text-3xl font-semibold text-blue-700 mb-8 text-center">
                     Digital Transformation Elements
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {elements.map((el, idx) => (
                         <motion.div
                             key={idx}
