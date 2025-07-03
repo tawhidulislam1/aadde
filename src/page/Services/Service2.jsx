@@ -3,50 +3,65 @@ import React from 'react';
 const Service2 = () => {
     return (
         <div>
-            <section className="max-w-5xl mx-auto px-6 py-16 bg-white rounded shadow-md">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
+            <section className="max-w-6xl mx-auto px-6 py-16">
+                <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">
                     Project Management
                 </h1>
 
-                <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-                    Effective project management ensures your team meets deadlines and delivers quality results.
-                    It requires clear planning, strong communication, and flexibility.
+                <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+                    As a consulting services with project management expertise combined with PMI membership and certification, our proven ability to deliver business priorities ranging from organizational process improvements to the implementing project management and strategy execution services to assist organizations and their people perform to maximum potential is why ADE is awarded the project management assignment.
                 </p>
 
-                <div className="grid gap-10 md:grid-cols-3">
-                    <div className="border rounded p-6 shadow-sm hover:shadow-md transition">
-                        <h2 className="text-xl font-semibold mb-3">Planning</h2>
-                        <p className="text-gray-600">
-                            Define project goals, scope, timeline, and allocate resources effectively to set a strong foundation.
-                        </p>
-                    </div>
+                <h2 className="text-2xl font-semibold text-green-600 mb-8 text-left">What we do:</h2>
 
-                    <div className="border rounded p-6 shadow-sm hover:shadow-md transition">
-                        <h2 className="text-xl font-semibold mb-3">Execution</h2>
-                        <p className="text-gray-600">
-                            Coordinate your team, track progress, manage risks, and communicate clearly throughout the project.
-                        </p>
-                    </div>
-
-                    <div className="border rounded p-6 shadow-sm hover:shadow-md transition">
-                        <h2 className="text-xl font-semibold mb-3">Closure</h2>
-                        <p className="text-gray-600">
-                            Finalize deliverables, gather feedback, and document lessons learned to improve future projects.
-                        </p>
-                    </div>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {[
+                        {
+                            icon: '🛠️',
+                            title: 'Project Feasibility Study',
+                        },
+                        {
+                            icon: '⚠️',
+                            title: 'Project Risk Management Study',
+                        },
+                        {
+                            icon: '📊',
+                            title: 'Project Finance',
+                        },
+                        {
+                            icon: '👨‍💼',
+                            title: 'We can set-up PMO and Provide relevant PMO services such as framework development. PMO maturity assessment and interate Project Management Office with business.',
+                        },
+                        {
+                            icon: '🧠',
+                            title: 'Project Resource Management, Staffing, Organization specific PM training, and Project Plan. And Prepare for Organization for change. Project Execution assistance.',
+                        },
+                        {
+                            icon: '📋',
+                            title: 'Project Reporting, Portfolio, Develop Requirements / RFP,',
+                        },
+                    ].map((item, index) => (
+                        <div
+                            key={index}
+                            className="bg-indigo-50 text-indigo-800 p-6 rounded-xl shadow hover:shadow-md transition"
+                        >
+                            <div className="text-3xl mb-4">{item.icon}</div>
+                            <p className="text-base">{item.title}</p>
+                        </div>
+                    ))}
                 </div>
 
-                <div className="mt-16">
-                    <h3 className="text-2xl font-semibold mb-6 text-center">Key Tools & Practices</h3>
-                    <ul className="max-w-xl mx-auto grid grid-cols-2  gap-4 list-disc list-inside text-gray-700">
-                        <li>Clear Communication</li>
-                        <li>Defined Roles</li>
-                        <li>Regular Progress Monitoring</li>
-                        <li>Risk Management</li>
-                        <li>Stakeholder Engagement</li>
-                        <li>Adaptability & Flexibility</li>
-                        <li>Documentation</li>
-                        <li>Time & Budget Tracking</li>
+                <div className="mt-16 bg-indigo-50 text-indigo-800 p-6 rounded-xl shadow-md">
+                    <p className="mb-2">And</p>
+                    <p className="mb-4">
+                        Implement <span className="text-green-600 underline">Agile Approaches</span> and Methodology development.
+                    </p>
+
+                    <h3 className="font-semibold text-lg mb-2">Project Assessments and Diagnostics:</h3>
+                    <ul className="list-disc list-inside space-y-1">
+                        <li>Project and Program health checkup and Audits</li>
+                        <li>Strategic Initiatives Prioritization</li>
+                        <li>Project diagnostic assessments and recommendations.</li>
                     </ul>
                 </div>
             </section>

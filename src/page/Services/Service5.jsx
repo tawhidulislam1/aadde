@@ -1,38 +1,60 @@
 /* eslint-disable no-unused-vars */
-import { FiUsers, FiBookOpen, FiCheckCircle } from "react-icons/fi";
+import { FiUsers, FiBookOpen, FiCheckCircle, FiAward, FiHeart, FiLayers } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const coreFocus = [
     {
         icon: <FiUsers className="text-indigo-600 w-10 h-10" />,
-        title: "Talent Acquisition",
-        description:
-            "Identify, attract, and onboard top-tier talent that fits both your skill requirements and company culture.",
+        title: "Acquire",
+        description: "Resource acquisition is the most important task for HR. A blend of art and science — focusing not just on experience, but also skill and attitude."
     },
     {
-        icon: <FiBookOpen className="text-blue-500 w-10 h-10" />,
-        title: "Learning & Development",
-        description:
-            "Foster a culture of continuous learning through skill-building programs, mentorship, and knowledge sharing.",
+        icon: <FiHeart className="text-green-600 w-10 h-10" />,
+        title: "Adopt",
+        description: "Employees should feel this is the best place to grow. Culture and environment should make them feel belonged and empowered."
     },
     {
-        icon: <FiCheckCircle className="text-green-600 w-10 h-10" />,
-        title: "Performance & Retention",
-        description:
-            "Implement systems to evaluate, motivate, and retain high-performing individuals while maintaining team alignment.",
+        icon: <FiAward className="text-yellow-500 w-10 h-10" />,
+        title: "Award",
+        description: "Recognize and motivate, especially Gen Z, with the right tools, flexibility, and feedback mechanisms."
     },
+    {
+        icon: <FiLayers className="text-blue-500 w-10 h-10" />,
+        title: "Assist",
+        description: "Supportive culture and impactful work ensures continuity and performance — not just loyalty."
+    }
 ];
 
-const principles = [
-    "Empowerment",
-    "Diversity & Inclusion",
-    "Workplace Flexibility",
-    "Growth Mindset",
-    "Recognition & Rewards",
-    "Clear Communication",
-    "Transparency",
-    "Employee Wellness",
+const insights = [
+    "Pro-bono Initiatives",
+    "Canada Market Focus",
+    "Talent and Transformation",
+    "C-Suite Development",
+    "Retaining Talent",
+    "Diversity, Equity & Inclusion (DEI)",
+    "ESG and Sustainability",
+    "Skill-based Talent Management",
+    "HR Transformation",
+    "Change Management"
 ];
+
+const peopleStrategy = [
+    "Employee Branding",
+    "Digital Strategy",
+    "People Risks & Business Resilience",
+    "HR Transformation"
+];
+
+const learningDev = [
+    "Skill Bank",
+    "Job Architecture",
+    "Skill Management",
+    "HR Transformation",
+    "Workday Services",
+    "Workforce & Org Transformation",
+    "Placement / Recruitment / Career Planning"
+];
+
 const Service5 = () => {
     return (
         <section className="max-w-6xl mx-auto px-6 py-16 space-y-20">
@@ -44,17 +66,15 @@ const Service5 = () => {
                 className="text-center"
             >
                 <h1 className="text-4xl font-extrabold text-indigo-800 mb-4">
-                    Human Capital
+                    Human Capital – 4A @C
                 </h1>
                 <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-                    At the core of every successful organization is its people. We focus
-                    on acquiring, developing, and retaining exceptional talent — while
-                    nurturing a culture of collaboration, empowerment, and innovation.
+                    People are the foundation of transformation. Our 4A model — Acquire, Adopt, Award, Assist — strengthens human capital for real impact.
                 </p>
             </motion.div>
 
-            {/* Focus Areas */}
-            <div className="grid md:grid-cols-3 gap-8">
+            {/* 4A Cards */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {coreFocus.map((item, index) => (
                     <motion.div
                         key={index}
@@ -71,20 +91,44 @@ const Service5 = () => {
                 ))}
             </div>
 
-            {/* Principles Section */}
+            {/* Insights */}
             <div className="bg-indigo-50 p-10 rounded-lg shadow-inner">
                 <h2 className="text-3xl font-bold text-indigo-700 text-center mb-8">
-                    Core Human Capital Principles
+                    Insights
                 </h2>
-                <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center text-indigo-800 font-medium">
-                    {principles.map((principle, idx) => (
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-indigo-800 font-medium">
+                    {insights.map((item, idx) => (
                         <motion.li
                             key={idx}
-                            whileHover={{ scale: 1.1 }}
+                            whileHover={{ scale: 1.05 }}
                             className="bg-white p-4 rounded shadow hover:bg-indigo-100 transition cursor-default"
                         >
-                            {principle}
+                            {item}
                         </motion.li>
+                    ))}
+                </ul>
+            </div>
+
+            {/* People Strategy */}
+            <div className="bg-white p-10 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-semibold text-indigo-700 mb-6">People Strategy</h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-indigo-900">
+                    {peopleStrategy.map((item, idx) => (
+                        <li key={idx} className="bg-indigo-50 p-4 rounded shadow hover:bg-indigo-100">
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            {/* Learning & Development */}
+            <div className="bg-white p-10 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-semibold text-indigo-700 mb-6">Learning & Development</h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-indigo-900">
+                    {learningDev.map((item, idx) => (
+                        <li key={idx} className="bg-indigo-50 p-4 rounded shadow hover:bg-indigo-100">
+                            {item}
+                        </li>
                     ))}
                 </ul>
             </div>
