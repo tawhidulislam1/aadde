@@ -279,7 +279,7 @@ const Service1 = () => {
                     </h3>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:md:grid-cols-5 gap-4">
                     {functionalTransformations.map((item, idx) => (
                         <div
                             key={idx}

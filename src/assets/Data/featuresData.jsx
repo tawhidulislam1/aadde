@@ -1,13 +1,13 @@
 export const featuresData = [
     {
         id: 1,
-        title: "Job support",
+        title: "A B C",
         image: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="w-10 h-10 text-blue-600"
             >
                 <path
                     fillRule="evenodd"
@@ -17,19 +17,22 @@ export const featuresData = [
                 <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
             </svg>
         ),
-        altText: "Job support image",
+        altText: "ABC",
         description:
-            "Elevate Your Work Performance! Tech-Monks provides personalized support to you for any tech-stack. Our tech geeks ensure efficient and effective execution. Enhance your productivity and thrive in your role with our expert guidance. Elevate your work experience with us today!",
+            `The most important asset of a business is People. Human is a unique asset which is
+difficult to replace. In the era of technology, human became more important who can
+manage machine, technology. Performance Management and Compensation review
+Category Our Work PPT description`,
     },
     {
         id: 2,
-        title: "Freelancing",
+        title: "Skill Portfolio",
         image: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="w-10 h-10 text-blue-600"
             >
                 <path
                     fillRule="evenodd"
@@ -38,19 +41,19 @@ export const featuresData = [
                 />
             </svg>
         ),
-        altText: "Freelancing image",
+        altText: "Skill Portfolio image",
         description:
-            "Empower Your Projects with Tech-Monks! Our skilled freelancers excel in driving and delivering entire projects single-handedly. Connect with us to accomplish your projects at your pace, with precision and expertise. Let Tech-Monks elevate your success today!",
+            `Skill Management for sustainability and Growth of the business.`,
     },
     {
         id: 3,
-        title: "Training",
+        title: "H3M",
         image: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="w-10 h-10 text-blue-600"
             >
                 <path d="M11.584 2.376a.75.75 0 0 1 .832 0l9 6a.75.75 0 1 1-.832 1.248L12 3.901 3.416 9.624a.75.75 0 0 1-.832-1.248l9-6Z" />
                 <path
@@ -61,25 +64,25 @@ export const featuresData = [
                 <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" />
             </svg>
         ),
-        altText: "Training image",
+        altText: "H3M image",
         description:
-            "Elevate Your Skills with Tech-Monks! Whether it's staff training or personal skill enhancement, we redefine your abilities. Connect with us to unlock your full potential and thrive in today's dynamic landscape. Let Tech-Monks empower your success journey.",
+            "Professionally on boarding new resources",
     },
     {
         id: 4,
-        title: "Projects",
+        title: "HR Analytics",
         image: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="w-10 h-10 text-blue-600"
             >
                 <path d="M19.906 9c.382 0 .749.057 1.094.162V9a3 3 0 0 0-3-3h-3.879a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H6a3 3 0 0 0-3 3v3.162A3.756 3.756 0 0 1 4.094 9h15.812ZM4.094 10.5a2.25 2.25 0 0 0-2.227 2.568l.857 6A2.25 2.25 0 0 0 4.951 21H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-2.227-2.568H4.094Z" />
             </svg>
         ),
-        altText: "Projects image",
+        altText: "HR Analytics image",
         description:
-            "Discover Your Dream Project Vision with Us! Let our expertise guide you to identify your ideal project. Consult with us to unlock new perspectives and embark on your journey to success. Find clarity and direction with our tailored solutions.",
+            "HR Analytics - Optimum Use of resources",
     },
 ];
